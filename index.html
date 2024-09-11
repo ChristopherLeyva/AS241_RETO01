@@ -1,59 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BIBLIOTECA DEL SABER</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<h1>
-    <center>
-        <p>BIBLIOTECA DEL SABER</p>
-    </center>
-</h1>
 
 <body>
-    <h3>
-        <u>
-            <center>
-                <p>La biblioteca "Bien del Saber" ofrece una amplia gama de recursos bibliográficos, pero algunos de los
-                    géneros
-                    más destacados son los siguientes:</p>
-            </center>
-        </u>
-    </h3>
+    <!-- Encabezado -->
+    <header>
+        <h1>BIBLIOTECA DEL SABER</h1>
+    </header>
 
-    <hr><br><img width="250" height="250" src="imagen01.jpg" alt=""><br><hr>
-    <hr><br><img width="250" height="250" src="imagen02.jpg" alt=""><br><hr>
-    <hr><br><img width="250" height="250" src="imagen03.jpg" alt=""><br><hr>
+    <!-- Sección principal del contenido -->
+    <main>
+        <center>
+            <h3>
+                <u>
+                    <p>LA BIBLIOTECA "BIEN DEL SABER " OFRECE UNA AMPLIA GAMA DE RECURSOS BIBLIOGRÁFICOS, PERO ALGUNOS
+                        DE
+                        LOS GÉNEROS MÁS DESTACADOS SON LOS SIGUIENTES:</p>
+                </u>
+            </h3>
+        </center>
 
+        <hr>
 
-    <p><u>Ficción:</u>La ficción es uno de los <mark>géneros literarios más populares en todo el mundo</mark>Desde
-        novelas
-        clásicas hasta obras contemporáneas, este género ofrece a los lectores la oportunidad de sumergirse en mundos
-        imaginarios, explorar narrativas envolventes y conectarse con personajes únicos. Ya sea fantasía, ciencia
-        ficción, o realismo mágico, la ficción invita a los lectores a escapar de la realidad por un momento y
-        disfrutar de historias llenas de emociones y aventuras.</p>
+        <!-- Imágenes de la biblioteca -->
+        <div class="galeria">
+            <img width="250" height="250" src="imagen01.jpg" alt="Imagen de libro de ficción">
+            <img width="250" height="250" src="imagen02.jpg" alt="Imagen de libro de no ficción">
+            <img width="250" height="250" src="imagen03.jpg" alt="Imagen de libro de autoayuda">
+        </div>
 
-    <p><u>No Ficción:</u> La no ficción <mark>es un género elegante y majestuoso que se enfoca en hechos reales y
-            eventos
-            históricos.</mark> Los libros de no ficción ofrecen una visión profunda de diversos temas como la historia,
-        la ciencia, la política, y la filosofía, proporcionando a los lectores conocimientos valiosos y puntos de vista
-        informados. Este género es una excelente opción para aquellos que buscan aprender y ampliar su comprensión
-        del mundo que los rodea.</p>
+        <hr>
 
-    <p> <u>Autoayuda: </u> Los libros de autoayuda <mark>están diseñados para inspirar y empoderar a los
-            lectores.</mark> Este género
-        ofrece consejos prácticos para mejorar varios aspectos de la vida personal, desde las relaciones hasta el
-        bienestar emocional y la productividad. Estos libros son una fuente de amor y felicidad, ya que invitan a
-        los lectores a reflexionar sobre su crecimiento personal y les brindan herramientas para superar desafíos y
-        alcanzar sus metas.</p>
+        <!-- Descripción de los géneros -->
+        <section class="genres">
+            <p><u>Ficción:</u> La ficción es uno de los <mark>géneros literarios más populares en todo el mundo</mark>.
+                Desde novelas clásicas hasta obras contemporáneas, este género ofrece a los lectores la oportunidad de
+                sumergirse en mundos imaginarios, explorar narrativas envolventes y conectarse con personajes únicos.
+                Ya sea fantasía, ciencia ficción, o realismo mágico, la ficción invita a los lectores a escapar de la
+                realidad por un momento y disfrutar de historias llenas de emociones y aventuras.
+            </p>
 
+            <p><u>No Ficción:</u> La no ficción <mark>es un género elegante y majestuoso que se enfoca en hechos reales
+                    y eventos históricos</mark>. Los libros de no ficción ofrecen una visión profunda de diversos temas
+                como la historia, la ciencia, la política, y la filosofía, proporcionando a los lectores conocimientos
+                valiosos y puntos de vista informados. Este género es una excelente opción para aquellos que buscan
+                aprender y ampliar su comprensión del mundo que los rodea.
+            </p>
+
+            <p><u>Autoayuda:</u> Los libros de autoayuda <mark>están diseñados para inspirar y empoderar a los
+                    lectores</mark>. Este género ofrece consejos prácticos para mejorar varios aspectos de la vida
+                personal, desde las relaciones hasta el bienestar emocional y la productividad. Estos libros son una
+                fuente de amor y felicidad, ya que invitan a los lectores a reflexionar sobre su crecimiento personal
+                y les brindan herramientas para superar desafíos y alcanzar sus metas.
+            </p>
+        </section>
+
+        <hr>
+        <!-- Video YouTube -->
+        <section class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9ufWAtwf1yk?si=k-IwbrAQa8__vBpr"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </main>
+    <hr>
+    <center>
+        <section class="form-section">
+            <h3>Formulario de Visita</h3>
+            <form action="#" method="post">
+                <!-- Nombre del visitante -->
+                <label for="nombre">Nombre del visitante:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <!-- Calendario para seleccionar una fecha -->
+                <label for="fecha">Fecha de la visita:</label><br>
+                <input type="date" id="fecha" name="fecha" required><br><br>
+
+                <!-- Lista desplegable de categorías -->
+                <label for="categoria">Categoría de interés:</label><br>
+                <select id="categoria" name="categoria" required>
+                    <option value="ficcion">Ficción</option>
+                    <option value="no-ficcion">No Ficción</option>
+                    <option value="autoayuda">Autoayuda</option>
+                </select><br><br>
+
+                <!-- Botón de enviar -->
+                <input type="submit" value="Enviar">
+
+            </form>
+    </center>
+    <!-- Pie de página y tabla de horarios -->
+    <footer>
+        <p>&copy; 2024 Biblioteca del Saber - Todos los derechos reservados</p>
+        <table class="horarios">
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes a Viernes</td>
+                    <td>8:00 am - 3:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Sábados</td>
+                    <td>8:00 am - 12:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Domingos</td>
+                    <td>Cerrado</td>
+                </tr>
+            </tbody>
+        </table>
+    </footer>
 
 </body>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9ufWAtwf1yk?si=k-IwbrAQa8__vBpr"
-    title="YouTube video player" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 </html>

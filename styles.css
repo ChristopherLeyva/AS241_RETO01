@@ -1,0 +1,80 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a7a7a729;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Estilos de la galería */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.galeria img {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos de los géneros literarios */
+.genres {
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.genres p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Estilos del video */
+.video {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+footer th, footer td {
+    border: 1px solid #fff;
+    padding: 5px 10px;
+}
+
+footer th {
+    background-color: #444;
+}
+
+footer td {
+    background-color: #555;
+    color: #fff;
+}
